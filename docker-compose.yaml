@@ -3,9 +3,8 @@ services:
   structurizr:
     image: structurizr/lite
     container_name: structurizr_lite
-    # depends_on:
-    #   - structurizr-onpremises
     ports:
-      - 8080:8080
+      - "8080:8080"
     volumes:
       - ./docs/:/usr/local/structurizr:z
+#file: noinspection SpellCheckingInspection

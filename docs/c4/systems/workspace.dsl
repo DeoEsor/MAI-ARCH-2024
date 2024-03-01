@@ -1,7 +1,7 @@
 workspace {
 
-    name "Мобильный телохранитель"
-    description "демонстрационный пример для показа техник ведения проектной документацииы"
+    name "Сервис поиска попутчиков"
+    description "Яндекс.Go, только на божественных шарпах"
     !adrs decisions
     !docs documentation
     !identifiers hierarchical
@@ -16,11 +16,16 @@ workspace {
     views {
         systemContext softwareSystem "Diagram1" {
             include *
+            autolayout
         }
+        theme https://static.structurizr.com/themes/microsoft-azure-2021.01.26/theme.json
     }
 
     configuration {
         scope softwaresystem
     }
 
+    branding {
+        logo https://mai.ru/press/brand/download/Inverse/ENG/Inverse%20eng.png
+    }
 }
