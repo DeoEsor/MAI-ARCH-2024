@@ -1,0 +1,14 @@
+version: "3.8"
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  elasticsearch:
+  mongodb:
+  cache:
+  db:
+  certificates:
+  prometheus_data:
+  grafana_data:

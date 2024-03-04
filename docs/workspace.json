@@ -1,52 +1,212 @@
 {
   "id" : 1,
-  "name" : "Мобильный телохранитель",
-  "description" : "демонстрационный пример для показа техник ведения проектной документацииы",
-  "lastModifiedDate" : "2024-03-01T00:34:58Z",
+  "name" : "Сервис поиска попутчиков",
+  "description" : "Яндекс.Go, только на божественных шарпах",
+  "lastModifiedDate" : "2024-03-01T05:42:52Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBuYW1lICLQnNC+0LHQuNC70YzQvdGL0Lkg0YLQtdC70L7RhdGA0LDQvdC40YLQtdC70YwiCiAgICBkZXNjcmlwdGlvbiAi0LTQtdC80L7QvdGB0YLRgNCw0YbQuNC+0L3QvdGL0Lkg0L/RgNC40LzQtdGAINC00LvRjyDQv9C+0LrQsNC30LAg0YLQtdGF0L3QuNC6INCy0LXQtNC10L3QuNGPINC/0YDQvtC10LrRgtC90L7QuSDQtNC+0LrRg9C80LXQvdGC0LDRhtC40LjRiyIKICAgICFhZHJzIGRlY2lzaW9ucwogICAgIWRvY3MgZG9jdW1lbnRhdGlvbgogICAgIWlkZW50aWZpZXJzIGhpZXJhcmNoaWNhbAoKICAgIG1vZGVsIHsKICAgICAgICB1c2VyID0gcGVyc29uICJVc2VyIgogICAgICAgIHNvZnR3YXJlU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIlNvZnR3YXJlIFN5c3RlbSIKCiAgICAgICAgdXNlciAtPiBzb2Z0d2FyZVN5c3RlbSAiVXNlcyIKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBzb2Z0d2FyZVN5c3RlbSAiRGlhZ3JhbTEiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQogICAgICAgIAogICAgICAgIHRoZW1lIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMvbWljcm9zb2Z0LWF6dXJlLTIwMjEuMDEuMjYvdGhlbWUuanNvbgogICAgfQoKICAgIGNvbmZpZ3VyYXRpb24gewogICAgICAgIHNjb3BlIHNvZnR3YXJlc3lzdGVtCiAgICB9Cgp9Cg=="
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBuYW1lICLQodC10YDQstC40YEg0L/QvtC40YHQutCwINC/0L7Qv9GD0YLRh9C40LrQvtCyIgogICAgZGVzY3JpcHRpb24gItCv0L3QtNC10LrRgS5Hbywg0YLQvtC70YzQutC+INC90LAg0LHQvtC20LXRgdGC0LLQtdC90L3Ri9GFINGI0LDRgNC/0LDRhSIKICAgICFhZHJzIGRlY2lzaW9ucwogICAgIWRvY3MgZG9jdW1lbnRhdGlvbgogICAgIWlkZW50aWZpZXJzIGhpZXJhcmNoaWNhbAogICAgIWltcGxpZWRSZWxhdGlvbnNoaXBzIHRydWUKCiAgICBtb2RlbCB7CiAgICAgICAgYnVzaW5lc3NVc2VyID0gcGVyc29uICJCdXNpbmVzcyBVc2VyIiAiQSByZWd1bGFyIGJ1c2luZXNzIHVzZXIuIgogICAgICAgIGNvbmZpZ3VyYXRpb25Vc2VyID0gcGVyc29uICJDb25maWd1cmF0aW9uIFVzZXIiICJBIHJlZ3VsYXIgYnVzaW5lc3MgdXNlciB3aG8gY2FuIGFsc28gY29uZmlndXJlIHRoZSBwYXJhbWV0ZXJzIHVzZWQgaW4gdGhlIHJpc2sgY2FsY3VsYXRpb25zLiIKCiAgICAgICAgZmluYW5jaWFsUmlza1N5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJGaW5hbmNpYWwgUmlzayBTeXN0ZW0iICJDYWxjdWxhdGVzIHRoZSBiYW5rJ3MgZXhwb3N1cmUgdG8gcmlzayBmb3IgcHJvZHVjdCBYLiIgIkZpbmFuY2lhbCBSaXNrIFN5c3RlbSIgIAoKICAgICAgICB0cmFkZURhdGFTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiVHJhZGUgRGF0YSBTeXN0ZW0iICJUaGUgc3lzdGVtIG9mIHJlY29yZCBmb3IgdHJhZGVzIG9mIHR5cGUgWC4iCiAgICAgICAgcmVmZXJlbmNlRGF0YVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJSZWZlcmVuY2UgRGF0YSBTeXN0ZW0iICJNYW5hZ2VzIHJlZmVyZW5jZSBkYXRhIGZvciBhbGwgY291bnRlcnBhcnRpZXMgdGhlIGJhbmsgaW50ZXJhY3RzIHdpdGguIgogICAgICAgIHJlZmVyZW5jZURhdGFTeXN0ZW1WMiA9IHNvZnR3YXJlU3lzdGVtICJSZWZlcmVuY2UgRGF0YSBTeXN0ZW0gdjIuMCIgIk1hbmFnZXMgcmVmZXJlbmNlIGRhdGEgZm9yIGFsbCBjb3VudGVycGFydGllcyB0aGUgYmFuayBpbnRlcmFjdHMgd2l0aC4iICJGdXR1cmUgU3RhdGUiCiAgICAgICAgZW1haWxTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiRS1tYWlsIHN5c3RlbSIgIlRoZSBiYW5rJ3MgTWljcm9zb2Z0IEV4Y2hhbmdlIHN5c3RlbS4iCiAgICAgICAgY2VudHJhbE1vbml0b3JpbmdTZXJ2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkNlbnRyYWwgTW9uaXRvcmluZyBTZXJ2aWNlIiAiVGhlIGJhbmsncyBjZW50cmFsIG1vbml0b3JpbmcgYW5kIGFsZXJ0aW5nIGRhc2hib2FyZC4iCiAgICAgICAgYWN0aXZlRGlyZWN0b3J5ID0gc29mdHdhcmVTeXN0ZW0gIkFjdGl2ZSBEaXJlY3RvcnkiICJUaGUgYmFuaydzIGF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3Jpc2F0aW9uIHN5c3RlbS4iCgogICAgICAgIGJ1c2luZXNzVXNlciAtPiBmaW5hbmNpYWxSaXNrU3lzdGVtICJWaWV3cyByZXBvcnRzIHVzaW5nIgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gdHJhZGVEYXRhU3lzdGVtICJHZXRzIHRyYWRlIGRhdGEgZnJvbSIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IHJlZmVyZW5jZURhdGFTeXN0ZW0gIkdldHMgY291bnRlcnBhcnR5IGRhdGEgZnJvbSIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IHJlZmVyZW5jZURhdGFTeXN0ZW1WMiAiR2V0cyBjb3VudGVycGFydHkgZGF0YSBmcm9tIiAiIiAiRnV0dXJlIFN0YXRlIgogICAgICAgIGNvbmZpZ3VyYXRpb25Vc2VyIC0+IGZpbmFuY2lhbFJpc2tTeXN0ZW0gIkNvbmZpZ3VyZXMgcGFyYW1ldGVycyB1c2luZyIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IGVtYWlsU3lzdGVtICJTZW5kcyBhIG5vdGlmaWNhdGlvbiB0aGF0IGEgcmVwb3J0IGlzIHJlYWR5IHRvIgogICAgICAgIGVtYWlsU3lzdGVtIC0+IGJ1c2luZXNzVXNlciAiU2VuZHMgYSBub3RpZmljYXRpb24gdGhhdCBhIHJlcG9ydCBpcyByZWFkeSB0byIgIkUtbWFpbCBtZXNzYWdlIiAiQXN5bmNocm9ub3VzIgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gY2VudHJhbE1vbml0b3JpbmdTZXJ2aWNlICJTZW5kcyBjcml0aWNhbCBmYWlsdXJlIGFsZXJ0cyB0byIgIlNOTVAiICJBc3luY2hyb25vdXMsIEFsZXJ0IgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gYWN0aXZlRGlyZWN0b3J5ICJVc2VzIGZvciB1c2VyIGF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3Jpc2F0aW9uIgogICAgfQoKICAgIHZpZXdzIHsKCiAgICAgICAgc3lzdGVtQ29udGV4dCBmaW5hbmNpYWxSaXNrU3lzdGVtICJDb250ZXh0IiAiQW4gZXhhbXBsZSBTeXN0ZW0gQ29udGV4dCBkaWFncmFtIGZvciB0aGUgRmluYW5jaWFsIFJpc2sgU3lzdGVtIGFyY2hpdGVjdHVyZSBrYXRhLiIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KICAgICAgICB0aGVtZSBodHRwczovL3N0YXRpYy5zdHJ1Y3R1cml6ci5jb20vdGhlbWVzL21pY3Jvc29mdC1henVyZS0yMDIxLjAxLjI2L3RoZW1lLmpzb24KICAgICAgICBicmFuZGluZyB7CiAgICAgICAgICAgIGxvZ28gaHR0cHM6Ly9tYWkucnUvcHJlc3MvYnJhbmQvZG93bmxvYWQvSW52ZXJzZS9FTkcvSW52ZXJzZSUyMGVuZy5wbmcKICAgICAgICB9CiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgICAgc2NvcGUgc29mdHdhcmVzeXN0ZW0KICAgIH0KfQo="
   },
   "configuration" : {
     "scope" : "SoftwareSystem"
   },
   "model" : {
     "people" : [ {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "configurationuser"
+      },
+      "name" : "Configuration User",
+      "description" : "A regular business user who can also configure the parameters used in the risk calculations.",
+      "relationships" : [ {
+        "id" : "14",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ec255ea7-ef52-49d4-82af-a705e9eb65bd"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Configures parameters using"
+      } ],
+      "location" : "Unspecified"
+    }, {
       "id" : "1",
       "tags" : "Element,Person",
       "properties" : {
-        "structurizr.dsl.identifier" : "user"
+        "structurizr.dsl.identifier" : "businessuser"
       },
-      "name" : "User",
+      "name" : "Business User",
+      "description" : "A regular business user.",
       "relationships" : [ {
-        "id" : "3",
+        "id" : "10",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "058d360a-2cbd-425f-aaac-1eb9a1068ed1"
+          "structurizr.dsl.identifier" : "0dea643a-7cca-40a0-a6f7-4a50d4961a79"
         },
         "sourceId" : "1",
-        "destinationId" : "2",
-        "description" : "Uses"
+        "destinationId" : "3",
+        "description" : "Views reports using"
       } ],
       "location" : "Unspecified"
     } ],
     "softwareSystems" : [ {
-      "id" : "2",
+      "id" : "8",
       "tags" : "Element,Software System",
       "properties" : {
-        "structurizr.dsl.identifier" : "softwaresystem"
+        "structurizr.dsl.identifier" : "centralmonitoringservice"
       },
-      "name" : "Software System",
+      "name" : "Central Monitoring Service",
+      "description" : "The bank's central monitoring and alerting dashboard.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "tradedatasystem"
+      },
+      "name" : "Trade Data System",
+      "description" : "The system of record for trades of type X.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "6",
+      "tags" : "Element,Software System,Future State",
+      "properties" : {
+        "structurizr.dsl.identifier" : "referencedatasystemv2"
+      },
+      "name" : "Reference Data System v2.0",
+      "description" : "Manages reference data for all counterparties the bank interacts with.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "referencedatasystem"
+      },
+      "name" : "Reference Data System",
+      "description" : "Manages reference data for all counterparties the bank interacts with.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,Financial Risk System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "financialrisksystem"
+      },
+      "name" : "Financial Risk System",
+      "description" : "Calculates the bank's exposure to risk for product X.",
+      "relationships" : [ {
+        "id" : "12",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1faf4075-1677-44fb-87fd-689468842d85"
+        },
+        "sourceId" : "3",
+        "destinationId" : "5",
+        "description" : "Gets counterparty data from"
+      }, {
+        "id" : "17",
+        "tags" : "Relationship,Asynchronous,Alert",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2f4b8121-4b42-4023-8775-0b4d13d1710c"
+        },
+        "sourceId" : "3",
+        "destinationId" : "8",
+        "description" : "Sends critical failure alerts to",
+        "technology" : "SNMP"
+      }, {
+        "id" : "15",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "0743bcc4-ecf5-4751-901c-dd8af4a74767"
+        },
+        "sourceId" : "3",
+        "destinationId" : "7",
+        "description" : "Sends a notification that a report is ready to"
+      }, {
+        "id" : "18",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "905693bb-8ef7-4c85-bae2-c57d966769e0"
+        },
+        "sourceId" : "3",
+        "destinationId" : "9",
+        "description" : "Uses for user authentication and authorisation"
+      }, {
+        "id" : "11",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "213f83ca-21d7-47f2-9fdf-b6abe15a00da"
+        },
+        "sourceId" : "3",
+        "destinationId" : "4",
+        "description" : "Gets trade data from"
+      }, {
+        "id" : "13",
+        "tags" : "Relationship,Future State",
+        "properties" : {
+          "structurizr.dsl.identifier" : "9c8a2a53-362f-4e33-b1cb-f362c32cedd7"
+        },
+        "sourceId" : "3",
+        "destinationId" : "6",
+        "description" : "Gets counterparty data from"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "9",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "activedirectory"
+      },
+      "name" : "Active Directory",
+      "description" : "The bank's authentication and authorisation system.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "7",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "emailsystem"
+      },
+      "name" : "E-mail system",
+      "description" : "The bank's Microsoft Exchange system.",
+      "relationships" : [ {
+        "id" : "16",
+        "tags" : "Relationship,Asynchronous",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2c3d684e-c26c-43bc-a037-9acd16522e81"
+        },
+        "sourceId" : "7",
+        "destinationId" : "1",
+        "description" : "Sends a notification that a report is ready to",
+        "technology" : "E-mail message"
+      } ],
       "location" : "Unspecified",
       "documentation" : { }
     } ]
   },
   "documentation" : {
     "sections" : [ {
-      "content" : "# 1. Использование PostgreSQL в качестве основного хранилище данных\r\n\r\nDate: 2023-06-06\r\n\r\n## Status\r\n\r\nAccepted\r\n<!-- Amended by [2. Масштабирование PostgreSQL](0002-масштабирование.md)\r\nAmended by [3. Не использование ORM](0003-orm.md) -->\r\n\r\n\r\n## Context\r\n\r\nДля хранения информации о клиентах, совершаемых платежах, подписках и т.д. необходимо зранить информацию в долговременном носителе;\r\n\r\n## Decision\r\n\r\nРассматриваемые варианты:\r\n1. SQL хранилище на основе PostgreSQL 14\r\n2. NoSQL хранилище на основе MongoDB\r\n\r\n**Плюсы решения 1:**\r\nВозможность совершать запросы к хранилищу по различным критериям (поиск всех клиентов с неоплачеными счетами, различные критерии выбора клиентов и т.д.)\r\n\r\n**Минусы решения 1:**\r\nНеобходимо заранее продумать модель данных, критерии индексирования. Будет затруднено хранение слабоструктурированных данных. Для построения кластера нужно применять внешнее решение (patroni)\r\n\r\n**Плюсы решения 2:**\r\nВозможность менять/расширять модель зранения данных. Высокопроизводительные запросы по ключевым полям. Возможность построения кластера (из коробки)\r\n\r\n**Минусы решения 2:**\r\nПроизвольные запросы по связанным сущностям, будут не так эффективны.\r\n\r\n**Выбирается решение 1**\r\n\r\n## Consequences\r\nДля обеспечения отказоустойчивости необходимо отдельно разворачивать кластер на patroni.",
+      "content" : "# Financial Risk System\r\n\r\n## Context\r\n\r\nA global investment bank based in London, New York and Singapore trades (buys and sells) financial products with other banks (counterparties). When share prices on the stock markets move up or down, the bank either makes money or loses it. At the end of the working day, the bank needs to gain a view of how much risk they are exposed to (e.g. of losing money) by running some calculations on the data held about their trades. The bank has an existing Trade Data System (TDS) and Reference Data System (RDS) but need a new Risk System.\r\n\r\n![](embed:Context)\r\n\r\n### Trade Data System\r\n\r\nThe Trade Data System maintains a store of all trades made by the bank. It is already configured to generate a file-based XML export of trade data at the close of business (5pm) in New York. The export includes the following information for every trade made by the bank:\r\n\r\n- Trade ID\r\n- Date\r\n- Current trade value in US dollars\r\n- Counterparty ID\r\n\r\n### Reference Data System\r\n\r\nThe Reference Data System maintains all of the reference data needed by the bank. This includes information about counterparties; each of which represents an individual, a bank, etc. A file-based XML export is also available and includes basic information about each counterparty. A new organisation-wide reference data system is due for completion in the next 3 months, with the current system eventually being decommissioned.",
       "format" : "Markdown",
-      "filename" : "fundamental-tools copy.md",
+      "filename" : "context.md",
       "order" : 1,
+      "title" : ""
+    }, {
+      "content" : "## Functional Overview\r\n\r\nThe high-level functional requirements for the new Risk System are as follows.\r\n\r\n![Functional overview](images/functional-overview.png)\r\n\r\n1. Import trade data from the Trade Data System.\r\n2. Import counterparty data from the Reference Data System.\r\n3. Join the two sets of data together, enriching the trade data with information about the counterparty.\r\n4. For each counterparty, calculate the risk that the bank is exposed to.\r\n5. Generate a report that can be imported into Microsoft Excel containing the risk figures for all counterparties known by the bank.\r\n6. Distribute the report to the business users before the start of the next trading day (9am) in Singapore.\r\n7. Provide a way for a subset of the business users to configure and maintain the external parameters used by the risk calculations.",
+      "format" : "Markdown",
+      "filename" : "functional-overview.md",
+      "order" : 2,
+      "title" : ""
+    }, {
+      "content" : "## Quality Attributes\r\n\r\nThe quality attributes for the new Financial Risk System are as follows.\r\n\r\n### Performance\r\n\r\n- Risk reports must be generated before 9am the following business day in Singapore.\r\n \r\n### Scalability\r\n- The system must be able to cope with trade volumes for the next 5 years.\r\n- The Trade Data System export includes approximately 5000 trades now and it is anticipated that there will be an additional 10 trades per day.\r\n- The Reference Data System counterparty export includes approximately 20,000 counterparties and growth will be negligible.\r\n- There are 40-50 business users around the world that need access to the report.\r\n\r\n### Availability\r\n\r\n- Risk reports should be available to users 24x7, but a small amount of downtime (less than 30 minutes per day) can be tolerated.\r\n\r\n### Failover\r\n\r\n- Manual failover is sufficient for all system components, provided that the availability targets can be met.\r\n\r\n### Security\r\n\r\n- This system must follow bank policy that states system access is restricted to authenticated and authorised users only.\r\n- Reports must only be distributed to authorised users.\r\n- Only a subset of the authorised users are permitted to modify the parameters used in the risk calculations.\r\n- Although desirable, there are no single sign-on requirements (e.g. integration with Active Directory, LDAP, etc).\r\n- All access to the system and reports will be within the confines of the bank's global network.\r\n\r\n### Audit\r\n\r\n- The following events must be recorded in the system audit logs:\r\n  - Report generation.\r\n  - Modification of risk calculation parameters.\r\n- It must be possible to understand the input data that was used in calculating risk.\r\n\r\n### Fault Tolerance and Resilience\r\n\r\n- The system should take appropriate steps to recover from an error if possible, but all errors should be logged.\r\n- Errors preventing a counterparty risk calculation being completed should be logged and the process should continue.\r\n\r\n### Internationalization and Localization\r\n\r\n- All user interfaces will be presented in English only.\r\n- All reports will be presented in English only.\r\n- All trading values and risk figures will be presented in US dollars only.\r\n\r\n### Monitoring and Management\r\n\r\n- A Simple Network Management Protocol (SNMP) trap should be sent to the bank's Central Monitoring Service in the following circumstances:\r\n  - When there is a fatal error with a system component.\r\n  - When reports have not been generated before 9am Singapore time.\r\n\r\n### Data Retention and Archiving\r\n\r\n- Input files used in the risk calculation process must be retained for 1 year.\r\n\r\n### Interoperability\r\n\r\n- Interfaces with existing data systems should conform to and use existing data formats.",
+      "format" : "Markdown",
+      "filename" : "quality-attributes.md",
+      "order" : 3,
       "title" : ""
     } ],
     "decisions" : [ {
@@ -67,36 +227,94 @@
   },
   "views" : {
     "systemContextViews" : [ {
-      "key" : "Diagram1",
+      "key" : "Context",
       "order" : 1,
-      "softwareSystemId" : "2",
+      "description" : "An example System Context diagram for the Financial Risk System architecture kata.",
+      "softwareSystemId" : "3",
       "dimensions" : {
-        "width" : 850,
-        "height" : 1300
+        "width" : 4600,
+        "height" : 1900
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
       },
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 200,
-        "y" : 200
+        "x" : 3574,
+        "y" : 199
       }, {
         "id" : "2",
-        "x" : 200,
-        "y" : 800
+        "x" : 2449,
+        "y" : 199
+      }, {
+        "id" : "3",
+        "x" : 2449,
+        "y" : 799
+      }, {
+        "id" : "4",
+        "x" : 199,
+        "y" : 1399
+      }, {
+        "id" : "5",
+        "x" : 949,
+        "y" : 1399
+      }, {
+        "id" : "6",
+        "x" : 1699,
+        "y" : 1399
+      }, {
+        "id" : "7",
+        "x" : 3949,
+        "y" : 1399
+      }, {
+        "id" : "8",
+        "x" : 2449,
+        "y" : 1399
+      }, {
+        "id" : "9",
+        "x" : 3199,
+        "y" : 1399
       } ],
       "relationships" : [ {
-        "id" : "3"
+        "id" : "18"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "11",
+        "vertices" : [ {
+          "x" : 799,
+          "y" : 1399
+        } ]
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "10"
       } ]
     } ],
     "configuration" : {
       "branding" : {
-        "logo": "https://mai.ru/press/brand/download/Inverse/ENG/Inverse%20eng.png"
+        "logo" : "https://mai.ru/press/brand/download/Inverse/ENG/Inverse%20eng.png"
       },
       "styles" : { },
       "themes" : [ "https://static.structurizr.com/themes/microsoft-azure-2021.01.26/theme.json" ],
       "terminology" : { },
       "metadataSymbols" : "SquareBrackets",
-      "lastSavedView" : "Diagram1"
+      "lastSavedView" : "Context"
     }
   }
 }

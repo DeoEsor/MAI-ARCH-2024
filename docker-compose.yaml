@@ -1,10 +1,39 @@
-version: "3.3"
+version: "3.8"
+
+include:
+  - path: ./infra/docker-compose.variables.yaml
+  - path: ./infra/observability/docker-compose.observability.yaml
+  - path: ./infra/redis/docker-compose.redis.yaml
+  - path: ./infra/postgres/docker-compose.postgres.yaml
+  - path: ./infra/structurizer/docker-compose.structurize.yaml
+
 services:
-  structurizr:
-    image: structurizr/lite
-    container_name: structurizr_lite
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./docs/:/usr/local/structurizr:z
-#file: noinspection SpellCheckingInspection
+  tcs-gateway:
+    container_name: tcs-gateway
+    build:
+      context: .
+      dockerfile: ./src/tcs-gateway/TCS.Gateway.Presentation/Dockerfile
+      
+  tcs-route:
+    container_name: tcs-route
+    build:
+      context: .
+      dockerfile: ./src/tcs-route/TCS.Route.Presentation/Dockerfile
+      
+  tcs-trip:
+    container_name: tcs-trip
+    build:
+      context: .
+      dockerfile: ./src/tcs-trip/TCS.Trip.Presentation/Dockerfile
+      
+  tcs-trip-creator:
+    container_name: tcs-trip-creator 
+    build:
+      context: .
+      dockerfile: ./src/tcs-trip-creator/TCS.Trip.Creator.Presentation/Dockerfile
+      
+  tcs-user-facade:
+    container_name: tcs-user-facade
+    build:
+      context: .
+      dockerfile: ./src/tcs-user-facade/TCS.User.Facade.Presentation/Dockerfile
