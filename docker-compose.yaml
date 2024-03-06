@@ -13,27 +13,37 @@ services:
     build:
       context: .
       dockerfile: ./src/tcs-gateway/TCS.Gateway.Presentation/Dockerfile
-      
+    ports:
+      - 8000:80
+
   tcs-route:
     container_name: tcs-route
     build:
       context: .
       dockerfile: ./src/tcs-route/TCS.Route.Presentation/Dockerfile
-      
+    ports:
+      - 8001:80
+
   tcs-trip:
     container_name: tcs-trip
     build:
       context: .
       dockerfile: ./src/tcs-trip/TCS.Trip.Presentation/Dockerfile
-      
+    ports:
+      - 8002:80
+
   tcs-trip-creator:
-    container_name: tcs-trip-creator 
+    container_name: tcs-trip-creator
     build:
       context: .
       dockerfile: ./src/tcs-trip-creator/TCS.Trip.Creator.Presentation/Dockerfile
-      
+    ports:
+      - 8003:80
+
   tcs-user-facade:
     container_name: tcs-user-facade
     build:
       context: .
       dockerfile: ./src/tcs-user-facade/TCS.User.Facade.Presentation/Dockerfile
+    ports:
+      - 8004:80

@@ -1,61 +1,21 @@
-## Quality Attributes
+## Качественные требования
 
-The quality attributes for the new Financial Risk System are as follows.
+Качественные требования определяют ожидаемые свойства и характеристики проекта, которые обеспечивают его эффективную работу, удобство использования и надежность. Вот некоторые качественные требования, которые могут быть предъявлены к проекту "Сервис поиска попутчиков"
 
-### Performance
+### **Надежность**
+Система должна быть стабильной и работоспособной даже при высоких нагрузках. Должны быть предусмотрены механизмы резервного копирования данных и восстановления системы после сбоев.
 
-- Risk reports must be generated before 9am the following business day in Singapore.
- 
-### Scalability
-- The system must be able to cope with trade volumes for the next 5 years.
-- The Trade Data System export includes approximately 5000 trades now and it is anticipated that there will be an additional 10 trades per day.
-- The Reference Data System counterparty export includes approximately 20,000 counterparties and growth will be negligible.
-- There are 40-50 business users around the world that need access to the report.
+### **Безопасность**
+Должны быть реализованы меры по защите пользовательских данных, таких как хэширование паролей, защита от инъекций и атак перебора паролей. Система должна обеспечивать аутентификацию и авторизацию пользователей с использованием безопасных методов.
 
-### Availability
+### **Производительность**
+Система должна обеспечивать высокую скорость ответа на запросы пользователей. Например, система должна поддерживать обработку не менее **1000 запросов в секунду (RPS)** с временем отклика не более 100 миллисекунд. Также требуется достижение **SLA** на уровне 99.9% для времени отклика системы.
 
-- Risk reports should be available to users 24x7, but a small amount of downtime (less than 30 minutes per day) can be tolerated.
+### **Масштабируемость**
+Система должна быть легко масштабируемой и гибкой для обработки роста количества пользователей и данных, а также для добавления новых функций и модулей. Должны быть реализованы механизмы автоматического масштабирования, такие как горизонтальное масштабирование и использование облачных ресурсов.
 
-### Failover
+### **Отказоустойчивость**
+Система должна быть способной обрабатывать сбои и отказы в работе компонентов без прерывания обслуживания пользователей. Должны быть предусмотрены механизмы обработки и восстановления после отказов.
 
-- Manual failover is sufficient for all system components, provided that the availability targets can be met.
-
-### Security
-
-- This system must follow bank policy that states system access is restricted to authenticated and authorised users only.
-- Reports must only be distributed to authorised users.
-- Only a subset of the authorised users are permitted to modify the parameters used in the risk calculations.
-- Although desirable, there are no single sign-on requirements (e.g. integration with Active Directory, LDAP, etc).
-- All access to the system and reports will be within the confines of the bank's global network.
-
-### Audit
-
-- The following events must be recorded in the system audit logs:
-  - Report generation.
-  - Modification of risk calculation parameters.
-- It must be possible to understand the input data that was used in calculating risk.
-
-### Fault Tolerance and Resilience
-
-- The system should take appropriate steps to recover from an error if possible, but all errors should be logged.
-- Errors preventing a counterparty risk calculation being completed should be logged and the process should continue.
-
-### Internationalization and Localization
-
-- All user interfaces will be presented in English only.
-- All reports will be presented in English only.
-- All trading values and risk figures will be presented in US dollars only.
-
-### Monitoring and Management
-
-- A Simple Network Management Protocol (SNMP) trap should be sent to the bank's Central Monitoring Service in the following circumstances:
-  - When there is a fatal error with a system component.
-  - When reports have not been generated before 9am Singapore time.
-
-### Data Retention and Archiving
-
-- Input files used in the risk calculation process must be retained for 1 year.
-
-### Interoperability
-
-- Interfaces with existing data systems should conform to and use existing data formats.
+### **Observability**
+Система должна обеспечивать возможность наблюдения и мониторинга своего состояния и работы, включая логирование событий, метрики производительности и трассировку запросов. Должны быть предоставлены инструменты для анализа данных и выявления проблем в работе системы, включая метрики для отслеживания производительности, такие как количество запросов в секунду (RPS), время отклика, загрузка сервера и использование ресурсов.

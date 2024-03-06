@@ -2,8 +2,7 @@
   "id" : 1,
   "name" : "Сервис поиска попутчиков",
   "description" : "Яндекс.Go, только на божественных шарпах",
-  "lastModifiedDate" : "2024-03-01T05:42:52Z",
-  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-03-06T00:11:37Z",
   "properties" : {
     "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBuYW1lICLQodC10YDQstC40YEg0L/QvtC40YHQutCwINC/0L7Qv9GD0YLRh9C40LrQvtCyIgogICAgZGVzY3JpcHRpb24gItCv0L3QtNC10LrRgS5Hbywg0YLQvtC70YzQutC+INC90LAg0LHQvtC20LXRgdGC0LLQtdC90L3Ri9GFINGI0LDRgNC/0LDRhSIKICAgICFhZHJzIGRlY2lzaW9ucwogICAgIWRvY3MgZG9jdW1lbnRhdGlvbgogICAgIWlkZW50aWZpZXJzIGhpZXJhcmNoaWNhbAogICAgIWltcGxpZWRSZWxhdGlvbnNoaXBzIHRydWUKCiAgICBtb2RlbCB7CiAgICAgICAgYnVzaW5lc3NVc2VyID0gcGVyc29uICJCdXNpbmVzcyBVc2VyIiAiQSByZWd1bGFyIGJ1c2luZXNzIHVzZXIuIgogICAgICAgIGNvbmZpZ3VyYXRpb25Vc2VyID0gcGVyc29uICJDb25maWd1cmF0aW9uIFVzZXIiICJBIHJlZ3VsYXIgYnVzaW5lc3MgdXNlciB3aG8gY2FuIGFsc28gY29uZmlndXJlIHRoZSBwYXJhbWV0ZXJzIHVzZWQgaW4gdGhlIHJpc2sgY2FsY3VsYXRpb25zLiIKCiAgICAgICAgZmluYW5jaWFsUmlza1N5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJGaW5hbmNpYWwgUmlzayBTeXN0ZW0iICJDYWxjdWxhdGVzIHRoZSBiYW5rJ3MgZXhwb3N1cmUgdG8gcmlzayBmb3IgcHJvZHVjdCBYLiIgIkZpbmFuY2lhbCBSaXNrIFN5c3RlbSIgIAoKICAgICAgICB0cmFkZURhdGFTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiVHJhZGUgRGF0YSBTeXN0ZW0iICJUaGUgc3lzdGVtIG9mIHJlY29yZCBmb3IgdHJhZGVzIG9mIHR5cGUgWC4iCiAgICAgICAgcmVmZXJlbmNlRGF0YVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJSZWZlcmVuY2UgRGF0YSBTeXN0ZW0iICJNYW5hZ2VzIHJlZmVyZW5jZSBkYXRhIGZvciBhbGwgY291bnRlcnBhcnRpZXMgdGhlIGJhbmsgaW50ZXJhY3RzIHdpdGguIgogICAgICAgIHJlZmVyZW5jZURhdGFTeXN0ZW1WMiA9IHNvZnR3YXJlU3lzdGVtICJSZWZlcmVuY2UgRGF0YSBTeXN0ZW0gdjIuMCIgIk1hbmFnZXMgcmVmZXJlbmNlIGRhdGEgZm9yIGFsbCBjb3VudGVycGFydGllcyB0aGUgYmFuayBpbnRlcmFjdHMgd2l0aC4iICJGdXR1cmUgU3RhdGUiCiAgICAgICAgZW1haWxTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiRS1tYWlsIHN5c3RlbSIgIlRoZSBiYW5rJ3MgTWljcm9zb2Z0IEV4Y2hhbmdlIHN5c3RlbS4iCiAgICAgICAgY2VudHJhbE1vbml0b3JpbmdTZXJ2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkNlbnRyYWwgTW9uaXRvcmluZyBTZXJ2aWNlIiAiVGhlIGJhbmsncyBjZW50cmFsIG1vbml0b3JpbmcgYW5kIGFsZXJ0aW5nIGRhc2hib2FyZC4iCiAgICAgICAgYWN0aXZlRGlyZWN0b3J5ID0gc29mdHdhcmVTeXN0ZW0gIkFjdGl2ZSBEaXJlY3RvcnkiICJUaGUgYmFuaydzIGF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3Jpc2F0aW9uIHN5c3RlbS4iCgogICAgICAgIGJ1c2luZXNzVXNlciAtPiBmaW5hbmNpYWxSaXNrU3lzdGVtICJWaWV3cyByZXBvcnRzIHVzaW5nIgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gdHJhZGVEYXRhU3lzdGVtICJHZXRzIHRyYWRlIGRhdGEgZnJvbSIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IHJlZmVyZW5jZURhdGFTeXN0ZW0gIkdldHMgY291bnRlcnBhcnR5IGRhdGEgZnJvbSIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IHJlZmVyZW5jZURhdGFTeXN0ZW1WMiAiR2V0cyBjb3VudGVycGFydHkgZGF0YSBmcm9tIiAiIiAiRnV0dXJlIFN0YXRlIgogICAgICAgIGNvbmZpZ3VyYXRpb25Vc2VyIC0+IGZpbmFuY2lhbFJpc2tTeXN0ZW0gIkNvbmZpZ3VyZXMgcGFyYW1ldGVycyB1c2luZyIKICAgICAgICBmaW5hbmNpYWxSaXNrU3lzdGVtIC0+IGVtYWlsU3lzdGVtICJTZW5kcyBhIG5vdGlmaWNhdGlvbiB0aGF0IGEgcmVwb3J0IGlzIHJlYWR5IHRvIgogICAgICAgIGVtYWlsU3lzdGVtIC0+IGJ1c2luZXNzVXNlciAiU2VuZHMgYSBub3RpZmljYXRpb24gdGhhdCBhIHJlcG9ydCBpcyByZWFkeSB0byIgIkUtbWFpbCBtZXNzYWdlIiAiQXN5bmNocm9ub3VzIgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gY2VudHJhbE1vbml0b3JpbmdTZXJ2aWNlICJTZW5kcyBjcml0aWNhbCBmYWlsdXJlIGFsZXJ0cyB0byIgIlNOTVAiICJBc3luY2hyb25vdXMsIEFsZXJ0IgogICAgICAgIGZpbmFuY2lhbFJpc2tTeXN0ZW0gLT4gYWN0aXZlRGlyZWN0b3J5ICJVc2VzIGZvciB1c2VyIGF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3Jpc2F0aW9uIgogICAgfQoKICAgIHZpZXdzIHsKCiAgICAgICAgc3lzdGVtQ29udGV4dCBmaW5hbmNpYWxSaXNrU3lzdGVtICJDb250ZXh0IiAiQW4gZXhhbXBsZSBTeXN0ZW0gQ29udGV4dCBkaWFncmFtIGZvciB0aGUgRmluYW5jaWFsIFJpc2sgU3lzdGVtIGFyY2hpdGVjdHVyZSBrYXRhLiIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KICAgICAgICB0aGVtZSBodHRwczovL3N0YXRpYy5zdHJ1Y3R1cml6ci5jb20vdGhlbWVzL21pY3Jvc29mdC1henVyZS0yMDIxLjAxLjI2L3RoZW1lLmpzb24KICAgICAgICBicmFuZGluZyB7CiAgICAgICAgICAgIGxvZ28gaHR0cHM6Ly9tYWkucnUvcHJlc3MvYnJhbmQvZG93bmxvYWQvSW52ZXJzZS9FTkcvSW52ZXJzZSUyMGVuZy5wbmcKICAgICAgICB9CiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgICAgc2NvcGUgc29mdHdhcmVzeXN0ZW0KICAgIH0KfQo="
   },
@@ -12,25 +11,6 @@
   },
   "model" : {
     "people" : [ {
-      "id" : "2",
-      "tags" : "Element,Person",
-      "properties" : {
-        "structurizr.dsl.identifier" : "configurationuser"
-      },
-      "name" : "Configuration User",
-      "description" : "A regular business user who can also configure the parameters used in the risk calculations.",
-      "relationships" : [ {
-        "id" : "14",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "ec255ea7-ef52-49d4-82af-a705e9eb65bd"
-        },
-        "sourceId" : "2",
-        "destinationId" : "3",
-        "description" : "Configures parameters using"
-      } ],
-      "location" : "Unspecified"
-    }, {
       "id" : "1",
       "tags" : "Element,Person",
       "properties" : {
@@ -42,22 +22,97 @@
         "id" : "10",
         "tags" : "Relationship",
         "properties" : {
-          "structurizr.dsl.identifier" : "0dea643a-7cca-40a0-a6f7-4a50d4961a79"
+          "structurizr.dsl.identifier" : "8ff1e769-b32e-44e4-8151-1a5f2d4c45f1"
         },
         "sourceId" : "1",
         "destinationId" : "3",
         "description" : "Views reports using"
       } ],
       "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "configurationuser"
+      },
+      "name" : "Configuration User",
+      "description" : "A regular business user who can also configure the parameters used in the risk calculations.",
+      "relationships" : [ {
+        "id" : "14",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "18b05725-ef60-4497-ad0d-664a136130e1"
+        },
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Configures parameters using"
+      } ],
+      "location" : "Unspecified"
     } ],
     "softwareSystems" : [ {
-      "id" : "8",
-      "tags" : "Element,Software System",
+      "id" : "3",
+      "tags" : "Element,Software System,Financial Risk System",
       "properties" : {
-        "structurizr.dsl.identifier" : "centralmonitoringservice"
+        "structurizr.dsl.identifier" : "financialrisksystem"
       },
-      "name" : "Central Monitoring Service",
-      "description" : "The bank's central monitoring and alerting dashboard.",
+      "name" : "Financial Risk System",
+      "description" : "Calculates the bank's exposure to risk for product X.",
+      "relationships" : [ {
+        "id" : "11",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "4f33f24d-ce38-4c7e-b1d8-659dff3e8551"
+        },
+        "sourceId" : "3",
+        "destinationId" : "4",
+        "description" : "Gets trade data from"
+      }, {
+        "id" : "12",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "65042eb4-ca3d-4c4a-baaa-3c52ad2c1ef7"
+        },
+        "sourceId" : "3",
+        "destinationId" : "5",
+        "description" : "Gets counterparty data from"
+      }, {
+        "id" : "13",
+        "tags" : "Relationship,Future State",
+        "properties" : {
+          "structurizr.dsl.identifier" : "0cf4b4de-aeac-4244-bffc-f791394c1e33"
+        },
+        "sourceId" : "3",
+        "destinationId" : "6",
+        "description" : "Gets counterparty data from"
+      }, {
+        "id" : "15",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "5aa43dc6-9d14-4a34-a0e0-da67ea842891"
+        },
+        "sourceId" : "3",
+        "destinationId" : "7",
+        "description" : "Sends a notification that a report is ready to"
+      }, {
+        "id" : "17",
+        "tags" : "Relationship,Asynchronous,Alert",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a184cb43-cf61-4750-9e97-6df2e677c48f"
+        },
+        "sourceId" : "3",
+        "destinationId" : "8",
+        "description" : "Sends critical failure alerts to",
+        "technology" : "SNMP"
+      }, {
+        "id" : "18",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "6c7d09f7-582c-4cd2-afae-aee6d04970ea"
+        },
+        "sourceId" : "3",
+        "destinationId" : "9",
+        "description" : "Uses for user authentication and authorisation"
+      } ],
       "location" : "Unspecified",
       "documentation" : { }
     }, {
@@ -71,16 +126,6 @@
       "location" : "Unspecified",
       "documentation" : { }
     }, {
-      "id" : "6",
-      "tags" : "Element,Software System,Future State",
-      "properties" : {
-        "structurizr.dsl.identifier" : "referencedatasystemv2"
-      },
-      "name" : "Reference Data System v2.0",
-      "description" : "Manages reference data for all counterparties the bank interacts with.",
-      "location" : "Unspecified",
-      "documentation" : { }
-    }, {
       "id" : "5",
       "tags" : "Element,Software System",
       "properties" : {
@@ -91,79 +136,13 @@
       "location" : "Unspecified",
       "documentation" : { }
     }, {
-      "id" : "3",
-      "tags" : "Element,Software System,Financial Risk System",
+      "id" : "6",
+      "tags" : "Element,Software System,Future State",
       "properties" : {
-        "structurizr.dsl.identifier" : "financialrisksystem"
+        "structurizr.dsl.identifier" : "referencedatasystemv2"
       },
-      "name" : "Financial Risk System",
-      "description" : "Calculates the bank's exposure to risk for product X.",
-      "relationships" : [ {
-        "id" : "12",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "1faf4075-1677-44fb-87fd-689468842d85"
-        },
-        "sourceId" : "3",
-        "destinationId" : "5",
-        "description" : "Gets counterparty data from"
-      }, {
-        "id" : "17",
-        "tags" : "Relationship,Asynchronous,Alert",
-        "properties" : {
-          "structurizr.dsl.identifier" : "2f4b8121-4b42-4023-8775-0b4d13d1710c"
-        },
-        "sourceId" : "3",
-        "destinationId" : "8",
-        "description" : "Sends critical failure alerts to",
-        "technology" : "SNMP"
-      }, {
-        "id" : "15",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "0743bcc4-ecf5-4751-901c-dd8af4a74767"
-        },
-        "sourceId" : "3",
-        "destinationId" : "7",
-        "description" : "Sends a notification that a report is ready to"
-      }, {
-        "id" : "18",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "905693bb-8ef7-4c85-bae2-c57d966769e0"
-        },
-        "sourceId" : "3",
-        "destinationId" : "9",
-        "description" : "Uses for user authentication and authorisation"
-      }, {
-        "id" : "11",
-        "tags" : "Relationship",
-        "properties" : {
-          "structurizr.dsl.identifier" : "213f83ca-21d7-47f2-9fdf-b6abe15a00da"
-        },
-        "sourceId" : "3",
-        "destinationId" : "4",
-        "description" : "Gets trade data from"
-      }, {
-        "id" : "13",
-        "tags" : "Relationship,Future State",
-        "properties" : {
-          "structurizr.dsl.identifier" : "9c8a2a53-362f-4e33-b1cb-f362c32cedd7"
-        },
-        "sourceId" : "3",
-        "destinationId" : "6",
-        "description" : "Gets counterparty data from"
-      } ],
-      "location" : "Unspecified",
-      "documentation" : { }
-    }, {
-      "id" : "9",
-      "tags" : "Element,Software System",
-      "properties" : {
-        "structurizr.dsl.identifier" : "activedirectory"
-      },
-      "name" : "Active Directory",
-      "description" : "The bank's authentication and authorisation system.",
+      "name" : "Reference Data System v2.0",
+      "description" : "Manages reference data for all counterparties the bank interacts with.",
       "location" : "Unspecified",
       "documentation" : { }
     }, {
@@ -178,7 +157,7 @@
         "id" : "16",
         "tags" : "Relationship,Asynchronous",
         "properties" : {
-          "structurizr.dsl.identifier" : "2c3d684e-c26c-43bc-a037-9acd16522e81"
+          "structurizr.dsl.identifier" : "c6d850a4-fa71-4c79-a716-eaa9a2c66d58"
         },
         "sourceId" : "7",
         "destinationId" : "1",
@@ -187,30 +166,50 @@
       } ],
       "location" : "Unspecified",
       "documentation" : { }
+    }, {
+      "id" : "8",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "centralmonitoringservice"
+      },
+      "name" : "Central Monitoring Service",
+      "description" : "The bank's central monitoring and alerting dashboard.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "9",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "activedirectory"
+      },
+      "name" : "Active Directory",
+      "description" : "The bank's authentication and authorisation system.",
+      "location" : "Unspecified",
+      "documentation" : { }
     } ]
   },
   "documentation" : {
     "sections" : [ {
-      "content" : "# Financial Risk System\r\n\r\n## Context\r\n\r\nA global investment bank based in London, New York and Singapore trades (buys and sells) financial products with other banks (counterparties). When share prices on the stock markets move up or down, the bank either makes money or loses it. At the end of the working day, the bank needs to gain a view of how much risk they are exposed to (e.g. of losing money) by running some calculations on the data held about their trades. The bank has an existing Trade Data System (TDS) and Reference Data System (RDS) but need a new Risk System.\r\n\r\n![](embed:Context)\r\n\r\n### Trade Data System\r\n\r\nThe Trade Data System maintains a store of all trades made by the bank. It is already configured to generate a file-based XML export of trade data at the close of business (5pm) in New York. The export includes the following information for every trade made by the bank:\r\n\r\n- Trade ID\r\n- Date\r\n- Current trade value in US dollars\r\n- Counterparty ID\r\n\r\n### Reference Data System\r\n\r\nThe Reference Data System maintains all of the reference data needed by the bank. This includes information about counterparties; each of which represents an individual, a bank, etc. A file-based XML export is also available and includes basic information about each counterparty. A new organisation-wide reference data system is due for completion in the next 3 months, with the current system eventually being decommissioned.",
+      "content" : "# Сервис поиска попутчиков\r\n\r\n## Введение\r\n\r\nЭтот проект представляет собой веб-приложение для поиска попутчиков, аналогичное сервису \"Яндекс.Go\".\r\nПриложение позволяет пользователям создавать профили, добавлять маршруты путешествий и создавать поездки, к которым могут присоединяться другие пользователи.\r\n\r\n## Контекст\r\n\r\nСистема поиска попутчиков: Это основная система, которая предоставляет функциональность по поиску попутчиков, созданию профилей пользователей, управлению маршрутами и поездками.\r\n\r\n![](embed:Context)",
       "format" : "Markdown",
       "filename" : "context.md",
       "order" : 1,
       "title" : ""
     }, {
-      "content" : "## Functional Overview\r\n\r\nThe high-level functional requirements for the new Risk System are as follows.\r\n\r\n![Functional overview](images/functional-overview.png)\r\n\r\n1. Import trade data from the Trade Data System.\r\n2. Import counterparty data from the Reference Data System.\r\n3. Join the two sets of data together, enriching the trade data with information about the counterparty.\r\n4. For each counterparty, calculate the risk that the bank is exposed to.\r\n5. Generate a report that can be imported into Microsoft Excel containing the risk figures for all counterparties known by the bank.\r\n6. Distribute the report to the business users before the start of the next trading day (9am) in Singapore.\r\n7. Provide a way for a subset of the business users to configure and maintain the external parameters used by the risk calculations.",
+      "content" : "## Функциональные требования к системе\r\n\r\nПроект должен реализовывать следующие API:\r\n\r\n- Создание нового пользователя\r\n- Поиск пользователя по логину\r\n- Поиск пользователя по маске имени и фамилии\r\n- Создание маршрута\r\n- Получение маршрутов пользователя\r\n- Создание поездки\r\n- Подключение пользователей к поездке\r\n- Получение информации о поездке",
       "format" : "Markdown",
       "filename" : "functional-overview.md",
       "order" : 2,
       "title" : ""
     }, {
-      "content" : "## Quality Attributes\r\n\r\nThe quality attributes for the new Financial Risk System are as follows.\r\n\r\n### Performance\r\n\r\n- Risk reports must be generated before 9am the following business day in Singapore.\r\n \r\n### Scalability\r\n- The system must be able to cope with trade volumes for the next 5 years.\r\n- The Trade Data System export includes approximately 5000 trades now and it is anticipated that there will be an additional 10 trades per day.\r\n- The Reference Data System counterparty export includes approximately 20,000 counterparties and growth will be negligible.\r\n- There are 40-50 business users around the world that need access to the report.\r\n\r\n### Availability\r\n\r\n- Risk reports should be available to users 24x7, but a small amount of downtime (less than 30 minutes per day) can be tolerated.\r\n\r\n### Failover\r\n\r\n- Manual failover is sufficient for all system components, provided that the availability targets can be met.\r\n\r\n### Security\r\n\r\n- This system must follow bank policy that states system access is restricted to authenticated and authorised users only.\r\n- Reports must only be distributed to authorised users.\r\n- Only a subset of the authorised users are permitted to modify the parameters used in the risk calculations.\r\n- Although desirable, there are no single sign-on requirements (e.g. integration with Active Directory, LDAP, etc).\r\n- All access to the system and reports will be within the confines of the bank's global network.\r\n\r\n### Audit\r\n\r\n- The following events must be recorded in the system audit logs:\r\n  - Report generation.\r\n  - Modification of risk calculation parameters.\r\n- It must be possible to understand the input data that was used in calculating risk.\r\n\r\n### Fault Tolerance and Resilience\r\n\r\n- The system should take appropriate steps to recover from an error if possible, but all errors should be logged.\r\n- Errors preventing a counterparty risk calculation being completed should be logged and the process should continue.\r\n\r\n### Internationalization and Localization\r\n\r\n- All user interfaces will be presented in English only.\r\n- All reports will be presented in English only.\r\n- All trading values and risk figures will be presented in US dollars only.\r\n\r\n### Monitoring and Management\r\n\r\n- A Simple Network Management Protocol (SNMP) trap should be sent to the bank's Central Monitoring Service in the following circumstances:\r\n  - When there is a fatal error with a system component.\r\n  - When reports have not been generated before 9am Singapore time.\r\n\r\n### Data Retention and Archiving\r\n\r\n- Input files used in the risk calculation process must be retained for 1 year.\r\n\r\n### Interoperability\r\n\r\n- Interfaces with existing data systems should conform to and use existing data formats.",
+      "content" : "## Качественные требования\r\n\r\nКачественные требования определяют ожидаемые свойства и характеристики проекта, которые обеспечивают его эффективную работу, удобство использования и надежность. Вот некоторые качественные требования, которые могут быть предъявлены к проекту \"Сервис поиска попутчиков\"\r\n\r\n### **Надежность**\r\nСистема должна быть стабильной и работоспособной даже при высоких нагрузках. Должны быть предусмотрены механизмы резервного копирования данных и восстановления системы после сбоев.\r\n\r\n### **Безопасность**\r\nДолжны быть реализованы меры по защите пользовательских данных, таких как хэширование паролей, защита от инъекций и атак перебора паролей. Система должна обеспечивать аутентификацию и авторизацию пользователей с использованием безопасных методов.\r\n\r\n### **Производительность**\r\nСистема должна обеспечивать высокую скорость ответа на запросы пользователей. Например, система должна поддерживать обработку не менее **1000 запросов в секунду (RPS)** с временем отклика не более 100 миллисекунд. Также требуется достижение **SLA** на уровне 99.9% для времени отклика системы.\r\n\r\n### **Масштабируемость**\r\nСистема должна быть легко масштабируемой и гибкой для обработки роста количества пользователей и данных, а также для добавления новых функций и модулей. Должны быть реализованы механизмы автоматического масштабирования, такие как горизонтальное масштабирование и использование облачных ресурсов.\r\n\r\n### **Отказоустойчивость**\r\nСистема должна быть способной обрабатывать сбои и отказы в работе компонентов без прерывания обслуживания пользователей. Должны быть предусмотрены механизмы обработки и восстановления после отказов.\r\n\r\n### **Observability**\r\nСистема должна обеспечивать возможность наблюдения и мониторинга своего состояния и работы, включая логирование событий, метрики производительности и трассировку запросов. Должны быть предоставлены инструменты для анализа данных и выявления проблем в работе системы, включая метрики для отслеживания производительности, такие как количество запросов в секунду (RPS), время отклика, загрузка сервера и использование ресурсов.\r\n",
       "format" : "Markdown",
       "filename" : "quality-attributes.md",
       "order" : 3,
       "title" : ""
     } ],
     "decisions" : [ {
-      "content" : "# 1. Выбор технологий для логики бекенда\n\nDate: 2024-02-29\n\n## Status\n\nAccepted\n\n## Context\n\nДля хранения информации о клиентах, совершаемых платежах, подписках и т.д. необходимо зранить информацию в долговременном носителе;\n\n## Decision\n\nРассматриваемые варианты:\n1. SQL хранилище на основе PostgreSQL 14\n2. NoSQL хранилище на основе MongoDB\n\n**Плюсы решения 1:**\nВозможность совершать запросы к хранилищу по различным критериям (поиск всех клиентов с неоплачеными счетами, различные критерии выбора клиентов и т.д.)\n\n**Минусы решения 1:**\nНеобходимо заранее продумать модель данных, критерии индексирования. Будет затруднено хранение слабоструктурированных данных. Для построения кластера нужно применять внешнее решение (patroni)\n\n**Плюсы решения 2:**\nВозможность менять/расширять модель зранения данных. Высокопроизводительные запросы по ключевым полям. Возможность построения кластера (из коробки)\n\n**Минусы решения 2:**\nПроизвольные запросы по связанным сущностям, будут не так эффективны.\n\n**Выбирается решение 1**\n\n## Consequences\n\nДля обеспечения отказоустойчивости необходимо отдельно разворачивать кластер на patroni.\n",
+      "content" : "# 1. Выбор технологий для логики бекенда\n\nDate: 2024-02-29\n\n## Status\n\nAccepted\n\n## Context\n\nНеобходимо выбрать фреймворк для реализации бэкенда приложения.\n\n## Decision\n\nРассматриваемые варианты:\n1. Node.js\n2. Django\n3. Go\n4. ASP.NET\n\n### Плюсы решения 1:\n\nВысокая скорость разработки, эффективность в работе с вводом-выводом, единая языковая среда.\n\n### Минусы решения 1:\n\nОднопоточность, сложности при работе с CPU-bound задачами, возможные проблемы с некоторыми модулями.\n\n\n### Плюсы решения 2:\n\nИнтуитивно понятная структура, обширное сообщество и поддержка, интеграция с Python.\n\n### Минусы решения 2:\n\nБолее сложное изучение для новичков, меньшая популярность в веб-разработке на C#, возможные проблемы с производительностью при больших нагрузках.\n\n### Плюсы решения 3:\n\nВысокая производительность и эффективность, простота разработки, многопоточная поддержка.\n\n### Минусы решения 3:\n\nОграниченный выбор библиотек и фреймворков для веб-разработки, возможные сложности с поиском и интеграцией необходимых решений, меньшая распространенность и сообщество по сравнению с некоторыми другими языками.\n\n\n### Плюсы решения 4:\n\nНадежность и производительность, поддержка языка C#, обширное сообщество и богатая документация.\n\n\n### Минусы решения 4:\n\nМеньшая гибкость, возможно более высокий порог вхождения для новичков, ограничения в выборе операционных систем и хостинг-провайдеров.\n\n\n### Выбирается решение 1\n\n## Consequences\n\nПридется писать на божественных шарпах((((\n",
       "format" : "Markdown",
       "id" : "1",
       "title" : "Выбор технологий для логики бекенда",
@@ -231,10 +230,6 @@
       "order" : 1,
       "description" : "An example System Context diagram for the Financial Risk System architecture kata.",
       "softwareSystemId" : "3",
-      "dimensions" : {
-        "width" : 4600,
-        "height" : 1900
-      },
       "automaticLayout" : {
         "implementation" : "Graphviz",
         "rankDirection" : "TopBottom",
@@ -242,45 +237,45 @@
         "nodeSeparation" : 300,
         "edgeSeparation" : 0,
         "vertices" : false,
-        "applied" : true
+        "applied" : false
       },
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "1",
-        "x" : 3574,
-        "y" : 199
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "2",
-        "x" : 2449,
-        "y" : 199
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "3",
-        "x" : 2449,
-        "y" : 799
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "4",
-        "x" : 199,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "5",
-        "x" : 949,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "6",
-        "x" : 1699,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "7",
-        "x" : 3949,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "8",
-        "x" : 2449,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "9",
-        "x" : 3199,
-        "y" : 1399
+        "x" : 0,
+        "y" : 0
       } ],
       "relationships" : [ {
         "id" : "18"
@@ -295,11 +290,7 @@
       }, {
         "id" : "13"
       }, {
-        "id" : "11",
-        "vertices" : [ {
-          "x" : 799,
-          "y" : 1399
-        } ]
+        "id" : "11"
       }, {
         "id" : "12"
       }, {
@@ -313,7 +304,6 @@
       "styles" : { },
       "themes" : [ "https://static.structurizr.com/themes/microsoft-azure-2021.01.26/theme.json" ],
       "terminology" : { },
-      "metadataSymbols" : "SquareBrackets",
       "lastSavedView" : "Context"
     }
   }
