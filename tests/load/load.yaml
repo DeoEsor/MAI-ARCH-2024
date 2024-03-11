@@ -1,0 +1,12 @@
+phantom:
+  address: 127.0.0.1:8000 # [Target's address]:[target's port]
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: line(1, 1000, 10m) # starting from 1rps growing linearly to 10rps during 10 minutes
+  uris:
+      - /swagger/index.html
+  connection_test: false
+console:
+  enabled: true # enable console output
+telegraf:
+  enabled: true # let's disable telegraf monitoring for the first time

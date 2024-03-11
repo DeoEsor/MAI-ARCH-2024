@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+        <PackageReference Include="prometheus-net.AspNetCore" />
+        <PackageReference Include="Swashbuckle.AspNetCore"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+      <Content Update="appsettings.Production.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+      <Content Update="appsettings.Staging.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
+      <Content Include="..\..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TCS.Trip.Application\TCS.Trip.Application.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Domain\TCS.Trip.Domain.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Infrastructure.Abstraction\TCS.Trip.Infrastructure.Abstraction.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Infrastructure\TCS.Trip.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
