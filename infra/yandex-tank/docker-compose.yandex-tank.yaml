@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  yandex-tank:
+    image: yandex/yandex-tank
+    container_name: yandex-tank
+    volumes:
+      - ../../tests/load/:/var/loadtest
+    depends_on:
+      - tcs-gateway

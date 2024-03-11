@@ -1,4 +1,6 @@
-﻿namespace TCS.Route.Presentation;
+﻿using Prometheus;
+
+namespace TCS.Route.Presentation;
 
 public class Startup(IConfiguration configuration)
 {
@@ -7,6 +9,7 @@ public class Startup(IConfiguration configuration)
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        services.AddHealthChecks();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,10 +30,14 @@ public class Startup(IConfiguration configuration)
         app.UseHttpsRedirection();
         app.UseRouting();
         app.UseAuthorization();
+        
+        app.UseMetricServer();
+        app.UseHttpMetrics();
 
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
+            endpoints.MapHealthChecks("/health");
         });
     }
 }

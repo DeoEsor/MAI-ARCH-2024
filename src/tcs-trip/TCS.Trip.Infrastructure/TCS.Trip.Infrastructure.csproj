@@ -1,2 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\TCS.Trip.Infrastructure.Abstraction\TCS.Trip.Infrastructure.Abstraction.csproj" />
+  </ItemGroup>
 </Project>

@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+        <PackageReference Include="prometheus-net.AspNetCore" />
         <PackageReference Include="Swashbuckle.AspNetCore"/>
     </ItemGroup>
 
@@ -23,6 +24,13 @@
       <Content Include="..\..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TCS.Trip.Application\TCS.Trip.Application.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Domain\TCS.Trip.Domain.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Infrastructure.Abstraction\TCS.Trip.Infrastructure.Abstraction.csproj" />
+      <ProjectReference Include="..\TCS.Trip.Infrastructure\TCS.Trip.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -4,6 +4,9 @@ services:
   prometheus:
     image: prom/prometheus
     container_name: prometheus
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
     ports:
       - 9090:9090
     volumes:
@@ -14,7 +17,13 @@ services:
   grafana:
     image: grafana/grafana
     container_name: grafana
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Moscow"
     ports:
       - 3000:3000
     volumes:
-      - grafana_data:/var/lib/grafana
+      - ./grafana/dashboards/:/var/lib/grafana/dashboards/
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+    depends_on:
+      - prometheus

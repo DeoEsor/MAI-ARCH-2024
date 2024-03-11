@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{34AE32
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		docker-compose.yaml = docker-compose.yaml
+		docker-compose.docs.yaml = docker-compose.docs.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E552F08A-0B05-4EA7-8B22-E1D7E8A87979}"
@@ -23,6 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "decisions", "decisions", "{
 	ProjectSection(SolutionItems) = preProject
 		docs\decisions\0001-framework.md = docs\decisions\0001-framework.md
 		docs\decisions\0002-rdbms-database.md = docs\decisions\0002-rdbms-database.md
+		docs\decisions\0003-caching.md = docs\decisions\0003-caching.md
+								docs\decisions\0004-dotnet-project-architecture.md = docs\decisions\0004-dotnet-project-architecture.md
+								docs\decisions\0005-service-naming.md = docs\decisions\0005-service-naming.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{8C9503B6-40FD-4437-BA03-A72F4791A866}"
@@ -39,6 +43,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{DAE7684F-4362-440D-9E12-8A630812D195}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "load", "load", "{D377D4D9-3BFF-4318-B59B-EDEDA39EFB9A}"
+	ProjectSection(SolutionItems) = preProject
+		tests\load\load.yaml = tests\load\load.yaml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tcs-gateway", "tcs-gateway", "{5595ED92-1928-4AB9-B63D-D2B21EAFE222}"
 EndProject
@@ -94,6 +101,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Creator.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Creator.Presentation", "src\tcs-trip-creator\TCS.Trip.Creator.Presentation\TCS.Trip.Creator.Presentation.csproj", "{65143C5E-98F8-4185-8696-BE3F184C7515}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Route.Presentation.IntegrationTests", "tests\integration\TCS.Route.Presentation.IntegrationTests\TCS.Route.Presentation.IntegrationTests.csproj", "{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Presentation.IntegrationTests", "tests\integration\TCS.Trip.Presentation.IntegrationTests\TCS.Trip.Presentation.IntegrationTests.csproj", "{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Creator.Presentation.IntegrationTests", "tests\integration\TCS.Trip.Creator.Presentation.IntegrationTests\TCS.Trip.Creator.Presentation.IntegrationTests.csproj", "{1B15DF07-D099-4B84-B636-2B79131AA7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.User.Facade.Presentation.IntegrationTests", "tests\integration\TCS.User.Facade.Presentation.IntegrationTests\TCS.User.Facade.Presentation.IntegrationTests.csproj", "{67B73767-35E7-4582-830F-936DB25CF272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.User.Facade.Presentation.UnitTests", "tests\unit\TCS.User.Facade.Presentation.UnitTests\TCS.User.Facade.Presentation.UnitTests.csproj", "{24A41298-3626-4234-933D-35B53A8CA5F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Presentation.UnitTests", "tests\unit\TCS.Trip.Presentation.UnitTests\TCS.Trip.Presentation.UnitTests.csproj", "{A066203A-8584-4D70-923F-D1BD880100A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Trip.Creator.Presentation.UnitTests", "tests\unit\TCS.Trip.Creator.Presentation.UnitTests\TCS.Trip.Creator.Presentation.UnitTests.csproj", "{AA2D8D66-3703-4696-AF66-CC941A56C8AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCS.Route.Presentation.UnitTests", "tests\unit\TCS.Route.Presentation.UnitTests\TCS.Route.Presentation.UnitTests.csproj", "{F1B41467-286C-42BA-A13C-AC5A2F47F476}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +160,14 @@ Global
 		{75673073-E5DB-468A-B844-45290245E44E} = {FBBF58CD-B397-406B-9E05-423FE41BAD79}
 		{489B9691-B182-4FA7-9FE2-9CA5427321C4} = {FBBF58CD-B397-406B-9E05-423FE41BAD79}
 		{65143C5E-98F8-4185-8696-BE3F184C7515} = {FBBF58CD-B397-406B-9E05-423FE41BAD79}
+		{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0} = {DAE7684F-4362-440D-9E12-8A630812D195}
+		{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2} = {DAE7684F-4362-440D-9E12-8A630812D195}
+		{1B15DF07-D099-4B84-B636-2B79131AA7E8} = {DAE7684F-4362-440D-9E12-8A630812D195}
+		{67B73767-35E7-4582-830F-936DB25CF272} = {DAE7684F-4362-440D-9E12-8A630812D195}
+		{24A41298-3626-4234-933D-35B53A8CA5F8} = {D4D7B73F-A5A5-4F90-8690-7A69C26CB8D0}
+		{A066203A-8584-4D70-923F-D1BD880100A9} = {D4D7B73F-A5A5-4F90-8690-7A69C26CB8D0}
+		{AA2D8D66-3703-4696-AF66-CC941A56C8AE} = {D4D7B73F-A5A5-4F90-8690-7A69C26CB8D0}
+		{F1B41467-286C-42BA-A13C-AC5A2F47F476} = {D4D7B73F-A5A5-4F90-8690-7A69C26CB8D0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6F298F80-583E-48B2-BA23-443C81BFCCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -227,5 +258,37 @@ Global
 		{65143C5E-98F8-4185-8696-BE3F184C7515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65143C5E-98F8-4185-8696-BE3F184C7515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65143C5E-98F8-4185-8696-BE3F184C7515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7F7B16-D880-4521-AD2C-6D0EF5C5A1E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D7D848-A55B-4A60-9FE7-87E0AE5FFDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B15DF07-D099-4B84-B636-2B79131AA7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B15DF07-D099-4B84-B636-2B79131AA7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B15DF07-D099-4B84-B636-2B79131AA7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B15DF07-D099-4B84-B636-2B79131AA7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B73767-35E7-4582-830F-936DB25CF272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B73767-35E7-4582-830F-936DB25CF272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B73767-35E7-4582-830F-936DB25CF272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B73767-35E7-4582-830F-936DB25CF272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A41298-3626-4234-933D-35B53A8CA5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A41298-3626-4234-933D-35B53A8CA5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A41298-3626-4234-933D-35B53A8CA5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A41298-3626-4234-933D-35B53A8CA5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A066203A-8584-4D70-923F-D1BD880100A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A066203A-8584-4D70-923F-D1BD880100A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A066203A-8584-4D70-923F-D1BD880100A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A066203A-8584-4D70-923F-D1BD880100A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2D8D66-3703-4696-AF66-CC941A56C8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2D8D66-3703-4696-AF66-CC941A56C8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2D8D66-3703-4696-AF66-CC941A56C8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2D8D66-3703-4696-AF66-CC941A56C8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B41467-286C-42BA-A13C-AC5A2F47F476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B41467-286C-42BA-A13C-AC5A2F47F476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B41467-286C-42BA-A13C-AC5A2F47F476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B41467-286C-42BA-A13C-AC5A2F47F476}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
